@@ -1,0 +1,3569 @@
+html{
+  font-size: 0.7320644vw;
+}
+html,
+body {
+  height: 100%;
+}
+p, div{
+  font-family: 'Roboto';
+}
+body {
+  margin: 0;
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.main-page {
+  height: 100%;
+}
+/* header */
+header {
+  height: 4rem;
+}
+.left-part{
+  width: 25.6rem;
+  height: 100%;
+  position: relative;
+  float:left;
+  background-color: #FAFAFA;
+  display: block;
+}
+.cancel-logo{
+  display: none;
+}
+.logo-div{
+  height: 25.5rem;
+  text-align: center;
+  background-color: #fff;
+}
+.block-logo{
+  height: 20rem;
+  position: relative;
+  cursor: pointer;
+}
+.block-logo:before, .block-logo:after{
+  content: '';
+  position: absolute;
+  bottom:5.7rem;
+  width: 1.5rem;
+  height: 2.4rem;
+  background-size: cover;
+}
+.block-logo:before{
+  left:6.3rem;
+  background-image: url(../img/logo-arrow-l.png);
+}
+.block-logo:after{
+  right:6.3rem;
+  background-image: url(../img/logo-arrow-r.png);
+    -webkit-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+.block-logo.active:after{
+  right:4rem;
+}
+.block-logo img{
+  width: 12rem;
+  height: 12rem;
+  margin-top: 4rem;
+}
+.contact-button a{
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #6BC43C;
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 1.4rem;
+  padding:1.1rem 3rem 1rem 3rem;
+  border-radius: 0.4rem;
+  display: inline-block;
+}
+.contact-button-more{
+  text-align: center;
+  margin-top: 5rem;
+}
+.contact-button-more a{
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #c367e6;
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 2.4rem;
+  padding: 1.5rem 4rem 1.5rem 4rem;
+  border-radius: 1.2rem;
+}
+nav{
+  border-top:0.1rem solid #DDDDDD;
+  height: 36.2rem;
+  background-color: #FAFAFA;
+  position: relative;
+}
+.nav_item{
+  width: 100%;
+  height: 5rem;
+  line-height: 5rem;
+  position: relative;
+  text-indent: 5rem;
+  cursor:pointer;
+}
+.nav_item:before {
+  content: '';
+  position: absolute;
+  top:50%;
+  left:4rem;
+  margin:-1rem 0 0 -1rem;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  -webkit-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+.nav_item:after,
+.nav_item:before{
+  -webkit-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+.nav_item:after{
+  content: '';
+  position: absolute;
+  top:50%;
+  left:4rem;
+  margin:-0.5rem 0 0 -0.5rem;
+  background-color: #FAFAFA;
+  border-radius: 50%;
+  height: 1rem;
+  width: 1rem;
+}
+.text-menu:after{
+  content: '';
+  position: absolute;
+  right:2.5rem;
+  margin-top: 1.3rem;
+  background-image: url(..//img/arrow.png);
+  background-size: cover;
+  width: 2rem;
+  height: 2rem;
+  -webkit-transition: all 0.55s ease;
+  -o-transition: all 0.55s ease;
+  transition: all 0.55s ease;
+}
+.b:before{background-color:#02A8F3}
+.p:before{background-color:#AA46BB}
+.r:before{background-color:#EF6191}
+.o:before{background-color:#FF6F42}
+.g:before{background-color:#6bb345}
+
+.nav_item.b.active{background-color:#02A8F3}
+.nav_item.p.active{background-color:#AA46BB}
+.nav_item.r.active{background-color:#EF6191}
+.nav_item.o.active{background-color:#FF6F42}
+.nav_item.g.active{background-color:#6bb345}
+
+.text-menu{
+  margin-left: 2.5rem;
+  font-family: "Roboto";
+  font-size: 1.3rem;
+  color: #000;
+}
+.nav_item.active .text-menu{
+  color: #fff;
+}
+.nav_item.active .text-menu:after{ 
+  right:1.5rem;
+}
+.nav_item.active:before,
+.nav_item.active:after{
+  background-color: #fff;
+}
+footer{
+  width: 100%;
+  position: absolute;
+  left:0;
+  bottom:0;
+  height: 4.8rem;
+  background-color: #F4F4F4;
+  border-top:0.1rem solid #DDDDDD;
+}
+.footer_cont {
+    position: relative;
+    left: calc(0% + 0.5rem);
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 1.1rem;
+}
+.pages{
+  width:calc(100% - 25.6rem);
+  height: 100%;
+  position: relative;
+  float: left;
+  overflow: hidden;
+}
+.page{
+  width: calc(100% + 2rem);
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  color:white;
+  font-size:2rem;
+  display:none;
+  overflow-y: scroll;
+}
+.main_page{
+  background-image: url(../img/background-main.png);
+  background-size: cover;
+  height:100%;
+  width: 100%;
+  float:left;
+  display: none;
+}
+.menu-button{
+  display: none;
+}
+.main-text{
+  font-size: 6rem;
+  font-weight: 600;
+  text-align: center;
+  color:#fff;
+}
+.main-text p{
+  margin:2rem 0 0 0;
+  padding:0;
+}
+.main-href{
+  text-align: center;
+}
+.all-go{
+  width: 18.5rem;
+  display: inline-block;
+}
+.href_go{
+  background-image: url(../img/btns-n.png);
+  width: 15rem;
+  height: 15rem;
+  display: inline-block;
+  margin: 5rem 2rem 0 2rem;
+  background-size: 64rem auto;
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+.main_con{
+    position: relative;
+    left: calc(0% + 0.5rem);
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.android_go{
+  background-position: 0 0;
+}
+.socials-full{
+  display: block;
+  position: absolute;
+  top:-5rem;
+  width: 100%;
+  height: 5rem;
+  left: 50%;
+  margin-left: -9rem;
+}
+.socials-full a {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-size: cover;
+  margin: 0 1rem;
+}
+.facebook{
+  background-image: url(../img/socials-full/facebook.png);
+}
+.google_plus{
+  background-image: url(../img/socials-full/google_plus.png);
+}
+.linkedin{
+  background-image: url(../img/socials-full/linkedin.png);
+}
+.twitter{
+  background-image: url(../img/socials-full/twitter.png);
+}
+.socials-mob{
+  position: absolute;
+  margin: 5rem 0;
+  left: 50%;
+  margin-left:-22rem;
+}
+.socials-mob a {
+  display: inline-block;
+  width: 7rem;
+  height: 7rem;
+  margin: 0 2rem;
+  background-size: cover;
+}
+.facebook-mob{
+  background-image: url(../img/socials-mob/facebook-about.png);
+}
+.google_plus-mob{
+  background-image: url(../img/socials-mob/google_plus-about.png);
+}
+.linkedin-mob{
+  background-image: url(../img/socials-mob/linkedin-about.png);
+}
+.twitter-mob{
+  background-image: url(../img/socials-mob/twitter-about.png);
+}
+.android_go:hover{
+  background-position: 0 -28.75rem;
+}
+.ios_go{
+  background-position: -15rem 0;
+}
+.ios_go:hover{
+  background-position: -15rem -29.8rem;
+}
+.uxui_go{
+  background-position: -31.5rem 0;
+}
+.uxui_go:hover{
+  background-position: -31.5rem -29.5rem;
+}
+.text-href_go{
+  color: #fff;
+  font-size: 2.5rem;
+  margin-top: 0.3rem;
+}
+.contents{
+  display: none;
+}
+.page_cont{
+  height: calc(100% - 33.3rem);
+}
+.contents.active, .main_page.active, .page.active{display: block;}
+.work{background-color:#02A8F3;}
+.services{background-color:#AA46BB;}
+.solutions{background-color:#EF6191;}
+.careers{background-color:#FF6F42;}
+.about{background-color:#6bb345;}
+.wearables-w.active{
+  height: 100%;
+}
+.article{
+  font-size: 5.6rem;
+  color: #fff;
+  font-family: "Roboto";
+  margin-left: 6.5rem;
+  padding-bottom: 3rem;
+}
+.top-menu{
+  padding: 0.8rem 0 0.2rem 6rem;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  box-shadow: 0 0.4rem 0.4rem rgba(0,0,0,.2);
+}
+.work .top-menu{
+  background-color: #02A8F3;
+}
+.services .top-menu{
+  background-color: #AA46BB;
+}
+.top-menu a{
+  position: relative;
+  display:inline-block;
+  text-decoration:none;
+  color:#fff;
+  font-size: 1.4rem;
+  font-weight:500;
+  text-transform:uppercase;
+  padding:1.2rem 2.4rem 1.2rem;
+  height: 100%;
+}
+.top-menu a:before{
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  content: "";
+  width: 0;
+  height: 0.2rem;
+  background-color: #FFFF8C;
+  position: absolute;
+  left:50%;
+  bottom:-0.1rem;
+}
+.top-menu a:hover:before{
+  width: 100%;
+  left: 0;
+}
+.top-menu a.active:before{
+  width: 100%;
+  left: 0;
+}
+.top-menu.fixed{
+  position: fixed;
+  top: 0;
+}
+.action-button {
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 2rem 3.2rem;
+  overflow: hidden;
+  background: #E95546;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
+  color: #fff;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 0.5rem;
+}
+.content{
+  margin-top: 3rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 4.8rem;
+  min-height: 100%;
+}
+.project, .add-pr{
+  display: inline-block;
+  width: 27.2rem;
+  height: 46.4rem;
+  background-color: #fff;
+  vertical-align: top;
+  margin-bottom: 2.5rem;
+}
+.project:nth-child(even){
+  margin: 0 4.5rem;
+}
+.picture-pr{
+  width: 27.2rem;
+  height: 19rem;
+  background-size: cover;
+}
+.careers2{
+  min-height: 100%;
+}
+.android-w, .ios-w, .web-w , .wearables-w{
+  height: 100%;
+}
+.and-plus-ios .pr-android-w-1 .picture-pr{
+  background-image: url(../img/cards/McDonalds-Thumb.png);
+}
+.and-plus-ios .pr-android-w-2 .picture-pr{
+  background-image: url(../img/cards/Whiya-Thumb.png);
+}
+.and-plus-ios .pr-android-w-3 .picture-pr{
+  background-image: url(../img/cards/Wfsb-Thumb.png);
+}
+.and-plus-ios .pr-android-w-4 .picture-pr{
+  background-image: url(../img/cards/MobiKwik-Thumb.png);
+}
+.and-plus-ios .pr-android-w-5 .picture-pr{
+  background-image: url(../img/cards/Dental-Board-Thumb.jpg);
+}
+.and-plus-ios .pr-android-w-6 .picture-pr{
+  background-image: url(../img/cards/vkraina-Thumb.png);
+}
+.and-plus-ios .pr-android-w-7 .picture-pr{
+  background-image: url(../img/cards/WideUp-Thumb.png);
+}
+.and-plus-ios .pr-android-w-8 .picture-pr{
+  background-image: url(../img/cards/594-Thumb.jpg);
+}
+.and-plus-ios .pr-android-w-9 .picture-pr{
+  background-image: url(../img/cards/add-proj.png);
+}
+.article-pr,.text-pr,.text-more{
+  font-family: 'Roboto';
+  float:left;
+}
+.article-pr{
+  margin: 3rem 0 0 1.5rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #202020;
+}
+.text-pr{
+  margin: 2.5rem 1.5rem 0 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-align: left;
+  height: 14rem;
+  color: #414141;
+}
+.text-more {
+  margin-left:1.5rem;
+}
+.text-more a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #8AC249;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: 'Roboto';
+}
+.text-more a img{
+  margin-left: 3rem;
+  height: 1rem;
+}
+.footer{
+  width: 100%;
+  height: 4.9rem;
+  background-color: rgba(0,0,0,.35);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.block-first{
+  margin-top: 2rem;
+  text-align: left;
+}
+.block-first p:nth-child(1){
+  width: 40%;
+  float:left;
+}
+.block-first p:nth-child(2){
+  width: 40%;
+  float:right;
+}
+.block-second img{
+  max-width: 100%;
+}
+
+.content-mid{
+  width: 80%;
+  margin: 0 auto;
+    font-family: "Roboto";
+  font-size: 1.5rem;
+}
+.block-fourth{
+  margin-top: 4rem;
+}
+.block-fourth p{
+  font-weight: 900;
+  font-size: 2.4rem;
+}
+.approach p{
+  font-size: 5.6rem;
+  color: #fff;
+  font-family: "Roboto";
+  margin-bottom: 0;
+}
+.d-inline{
+  display: inline-block;
+}
+.img-bl{
+  width: 25.6rem;
+  vertical-align: middle;
+}
+.img-bl img{
+  max-width: 100%;
+  vertical-align: middle;
+}
+.text-appr{
+  width: 65%;
+  vertical-align: middle;
+}
+.title-appr{
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: left;
+}
+.about-appr{
+  font-size: 1.5rem;
+  margin-top: 1.2rem;
+  text-align: left;
+}
+.title-menu{
+  margin-top: 3rem;
+  font-size: 2.8rem;
+  font-weight: 900;
+}
+.android-s .block-second{
+  margin-top: 2rem;
+}
+.block-third {
+  margin-top: 3.5rem;
+}
+.android-s .block-third img{
+  max-width: 100%;
+}
+.android-s .block-fourth p, .android-s .block-fourth ul li{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.android-s .block-fourth ul li{
+  margin-top: 1rem;
+}
+.android-pic{
+  vertical-align: top;
+}
+.android-pic img{
+  vertical-align: top;
+  width: 100%;
+}
+.p-mid{
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+.white{
+  background-color: #fff;
+  height: 12rem;
+}
+.white p{
+  color: #000;
+  font-size: 1.5rem;
+  margin:0 12.5rem 0;
+  padding-top:0.5rem;
+  font-family: 'Roboto';
+}
+.white p:nth-child(3){
+  padding-top: 2.5rem;
+}
+.block-width{
+  background-color: #03A9F5;
+  text-align: center;
+}
+.block-width p{
+  padding-top: 2.5rem;
+  margin: 0;
+}
+.block-width .contact-button{
+  padding-bottom: 1.5rem;
+}
+.android-s .block-third img{
+  width:calc(100% - 2rem);
+    vertical-align: top;
+}
+.android-s, .ios-s, .wearables-s, .uxui-s, .careers2{
+  position: relative;
+}
+.android-s .block-fourth{
+  margin: 4rem 12.5rem 0;
+}
+.ios-s .block-second{
+  margin-top: 4rem;
+}
+.ios-s .block-fourth-ios img{
+  max-width: 70%;
+}
+.ios-s .block-fourth-ios{
+  margin: 4rem 12.5rem 0;
+}
+.ios-s .block-fourth-ios p{
+  font-size: 1.5rem;
+  margin-top: 4rem;
+}
+.ios-s .block-fourth-ios h3{
+  font-size: 2.4rem;
+}
+.ios-s .block-fourth-ios ul li{
+  font-size: 1.5rem;
+  margin-top:1rem;
+}
+.wearables-text p{
+  font-size: 1.5rem;
+  text-align: left;
+  margin-top: 2.5rem;
+}
+.content-hid{
+  display: none;
+  width: 100%;
+  float: left;
+}
+.content-hid p{
+    font-size: 1.5rem;
+  text-align: left;
+  margin-top: 2.5rem;
+  float:left;
+}
+.p-nt{
+  font-size: 2.8rem !important;
+  font-weight: 900;
+  margin: 0;
+  margin-bottom: 3.5rem;
+}
+.uxui-s .moremore{
+  left:9%;
+}
+.moremore{
+  margin-left: 0px;
+  cursor: pointer;
+  color: #F57DF6;
+  float: left;
+  position: relative;
+  left: 49%;
+}
+.uxui-s{
+  margin-top: 3rem;
+}
+.uxui-s .all-wear-uxui .left-img img{
+  opacity: 0.7;
+}
+.wearables-s{
+  margin-top: 3rem;
+}
+.wearables-text{
+  width: 47%;
+  margin-left: 8rem;
+  float:left;
+}
+.left-img{
+  width: 40%;
+  float:left;
+}
+.left-img img{
+  margin-top: 6.5rem;
+  max-width: 100%;
+}
+.img-vac{
+  width: 70%;
+  margin:4rem auto 0;
+}
+.vac-and,.vac-ios, .vac-cw{
+  width: 40%;
+  height: 20rem;
+  text-align: center;
+}
+.vac-and{
+  background-color: #033;
+}
+.vac-ios{
+  float: right;
+  background-color: #333;
+}
+.vac-cw{
+  background-color: #00DDD4;
+  margin: 3rem auto 0;
+}
+.vac-cw a{
+  display: block;
+  height: 20rem;
+  text-decoration: none;
+  color:#fff;
+}
+.vac-and img,.vac-ios img, .vac-cw a img{
+  margin-top: 4.8rem;
+}
+.article-car{
+    font-size: 5.6rem;
+    color: #fff;
+    font-family: "Roboto";
+    text-align: center;
+    margin-top: 7rem;
+}
+.img-vac2{
+  margin: 4rem auto 0px;
+  width: 90%;
+  text-align: center;
+}
+.perk{
+  width: 33rem;
+  vertical-align: top;
+}
+.perk img{
+  max-width: 100%;
+}
+.perk-text{
+  text-align: center;
+  font-size: 1.5rem;
+}
+.perk-title{
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.article-about{
+    font-size: 4rem;
+    color: #fff;
+    font-family: "Roboto";
+    text-align: center;
+    margin-top: 7rem;
+}
+.about-mid{
+    font-size: 2.1rem;
+    color: #fff;
+    font-family: "Roboto";
+    text-align: center;
+    margin-top: 4rem;
+}
+.about-mid2{
+  width: 60%;
+  margin:2rem auto 0;
+}
+.about ul{
+  margin: 4rem 0 0 10.5rem;
+}
+.about ul li{
+  font-size: 2.3rem;
+  margin-top: 1rem;
+}
+.team-block{
+  width: 100%;
+  margin:2rem auto 2rem;
+}
+.team{
+  display: inline-block !important;
+  width: 24%;
+  text-align: center;
+  margin-top: 3rem;
+}
+.team img{
+  max-width: 70%;
+}
+.function{
+  font-size: 1.7rem;
+  margin-top: 1rem;
+}
+.about-years{
+  margin: 5.5rem auto 4rem;
+  width: 70%;
+}
+.about-years img{
+  width: 100%;
+}
+.bottom-button{
+  width: 25rem;
+  height: 4.8rem;
+  position: absolute;
+  right: 0;
+  bottom:0;
+}
+.button-next{
+  display: block;
+  position: relative;
+}
+.work .bottom-button a{
+  background-color: #AA46BB;
+}
+.services .bottom-button a{
+  background-color: #FF6F42;
+}
+.careers .bottom-button a{
+  background-color: #6bb345;
+}
+.careers2 p{
+  padding-bottom: 4.8rem;
+}
+.all-top{
+  height: 14.5rem;
+  margin-top: 10.9rem;
+}
+.careers2 p{
+  font-size: 1.9rem;
+}
+.bottom-mob{
+  display: none;
+}
+.bottom-button a{
+  line-height: 4.8rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+  font-family: 'Roboto';
+  text-align: center;
+}
+.button-next:before{
+  content: '';
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  border: 0.5rem solid #fff;
+  margin-top: -0.9rem;
+}
+.button-next:after{
+  content: '';
+  position: absolute;
+  right: 2.5rem;
+  right: 4rem;
+  margin-top: 1.4rem;
+  background-image: url(..//img/arrow.png);
+  width: 2rem;
+  height: 2rem;
+  background-size: cover;
+}
+.card-div-all{
+  width: 50%;
+  height: 60rem;
+  position: absolute;
+  left:15%;
+  top:10%;
+  background-color: #fff;
+  overflow: hidden;
+}
+.card-div{
+  overflow-y: scroll;
+  width: calc(100% + 2.7rem);
+  height: 100%;
+}
+.arrslider{
+  position: fixed;
+  top:calc(30rem + 10%);
+  width: 44px;
+  height: 44px;
+  margin-top: -22px;
+  cursor: pointer;
+
+}
+.leftArr{
+  background-image: url(../img/cards/leftArrslider.png);
+  left:37.5rem;
+}
+.rightArr{
+  background-image: url(../img/cards/rightArrslider.png);
+  right:13rem;
+  background-repeat: no-repeat;
+}
+.arrslider2{
+  display: none;
+}
+.logo-card{
+  position: absolute;
+  top: 0;
+  left: 10%;
+  background-image: url(../img/cards/McDonalds-01.png);
+  width: 9.6rem;
+  height: 9.6rem;
+  z-index: 51;
+  background-size: cover;
+}
+.top-card{
+  width: 100%;
+  height: 9.6rem;
+  position: relative;
+}
+.pop_card_name, .pop_card_categ{
+  margin-left: 25.5rem;
+}
+.pop_card_name{
+  font-size: 2.4rem;
+  color: #fff;
+  padding-top: 2rem;
+}
+.pop_card_categ{
+ color: #fff;
+ opacity: 0.5;
+ font-size: 1.6rem;
+ margin-top: 0.2rem;
+}
+.top-card .cancel{
+  position: absolute;
+  width: 1.4rem;
+  height: 1.4rem;
+  right:4rem;
+  top:50%;
+  margin-top:-0.7rem;
+}
+.top-card .cancel img{
+  vertical-align: top;
+}
+.img-card{
+  background-image: url(../img/cards/McDonalds-02.png);
+  background-size: cover;
+  width: 100%;
+  height: 36rem;
+}
+.card-content{
+  width: 100%;
+  float: left;
+  background-color: #F9F9F9;
+  position: relative;
+}
+.left-card{
+  width: 65%;
+  float: left;
+  background-color: #fff;
+}
+.right-card{
+  width: 35%;
+  background-color: #F9F9F9;
+  float: right;
+}
+.top-content-card{
+  background-color: #F9F9F9;
+  padding-bottom: 4rem;
+}
+.testimonials{
+  margin-left: 7rem;
+  margin-right: 4rem;
+}
+.testi-title{
+  padding-top: 1rem;
+  color: #4285F4;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Roboto';
+}
+.testi-img{
+  background-image: url(../img/cards/Testimonials/McDonalds.png);
+  width: 12rem;
+  height: 12rem;
+  margin: 2rem auto 0;
+  background-size: cover;
+}
+.testiimg-about{
+  text-align: center;
+  margin-top: 2rem;
+  color: #AAAAAA;
+  font-size: 1.3rem;
+}
+.testi-text{
+  color:#747474;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+.other-card{
+    margin-left: 7rem;
+  margin-right: 4rem;
+}
+.testi-text li:nth-child(1){
+  margin-top: 1rem;
+}
+.category, .tags, .tools, .href-Android, .href-iOS{
+  margin-left: 1.5rem;
+}
+.categ-tag{
+  width: 100%;
+  height: 100%;
+  margin-top: 1.5rem;
+}
+.tags, .tools{
+  margin-top: 3.5rem;
+}
+/*.cat-tag{
+  display: inline-block;
+  background-color:#EDEDED;
+  font-size: 15px;
+  color: #6D6D6D;
+  padding: 4px 10px;
+  margin: 5px 0 5px 5px;
+}*/
+.category-tag, .tags-tags, .tools-tag{
+    display: inline-block;
+  background-color:#EDEDED;
+  font-size: 1.5rem;
+  color: #6D6D6D;
+  padding: 0.4rem 1rem;
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+.href-iOS{
+  margin-top: 5rem;
+}
+.href-Android{
+  margin-top: 1rem;
+}
+.href-iOS a img, .href-Android a img{
+  max-width: 100%;
+}
+.popup-full,.popup-full2{
+  display: none;
+  width:100%;
+  position:fixed;
+  height:100%;
+  z-index: 50;
+}
+.popup-full.active,.popup-full2.active{
+  display:block;
+  background-color:rgba(0,0,0, .75);
+}
+.callback-div{
+  width: 50%;
+  height: 56rem;
+  position: absolute;
+  left:35%;
+  top:10%;
+  background-color: #fff;
+}
+.callback-div .cancel{
+  position: absolute;
+  width: 1.4rem;
+  height: 1.4rem;
+  right:3%;
+  top:50%;
+  margin-top:-0.7rem;
+}
+.top-callback{
+  width: 100%;
+  height: 8rem;
+  background-color: #8AC249;
+  position: relative;
+}
+.top-callback div{
+    font-size: 2.6rem;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -1.6rem;
+    margin-left: 8rem;
+}
+.bot-callback{
+  width: 100%;
+  height: 48rem;
+}
+.left-callback{
+  width: 65%;
+  height: 48rem;
+  float:left;
+  background-color: #fff;
+}
+.right-callback{
+  width: 35%;
+  height: 48rem;
+  background-color: #F9F9F9;
+  float:right;
+}
+.left-callback form{
+  font-family: 'Roboto';
+}
+.left-callback form select{
+  border: none;
+  font-family: 'Roboto';
+  margin-left: 8rem;
+  width: 80%;
+  height: 4rem;
+  font-size: 1.6rem;
+  outline: none;
+  background-color: transparent;
+}
+.line-form{
+  width: 75%;
+  height: 0.2rem;
+  margin-left: 8rem;
+  background-color: #E1E1E1;
+}
+.left-callback form input{
+  font-family: 'Roboto';
+  font-size: 1.6rem;
+  border:none;
+  width: 79%;
+  height: 4rem;
+  outline: none;
+}
+.nameplus{
+  width: 100%;
+  height: 5rem;
+}
+.nameplus input{
+  width: 40% !important;
+  float: left;
+}
+.nameplus img{
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.form-img{
+  margin-top: 0.8rem;
+  width: 2.4rem;
+  float: left;
+  margin-left: 2.8rem;
+}
+.input-left{
+  width: 75%;
+  margin-left: 8rem;
+}
+.our-perks{
+  font-size: 5.6rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+.input-left2{
+  margin-left: 3rem;
+}
+.input-left2:after{
+  width: 75%;
+  height: 0.2rem;
+  margin-left: 8rem;
+  background-color: #E1E1E1;
+}
+.nameplus .line-form{
+  width: 40%;
+  float:left;
+}
+.form-phone input{
+  margin-left: 3.2rem;
+}
+form .cancel-but{
+  color: #9D9D9D;
+  background-color: #fff;
+  margin-right: 1rem;
+}
+form button{
+  text-transform: uppercase;
+  float: right;
+  margin-top: 4rem;
+  border:none;
+  padding:1.4rem 2.6rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+.sendButton {
+  background-color: #8AC249;
+  color:#fff;
+  margin-right: 2.2rem;
+}
+.after-form{
+  margin-left: 7.5rem;
+  margin-top: 3rem;
+  color: #757575;
+  font-size: 1.2rem;
+}
+.left-callback p{
+  font-size: 1.9rem;
+  color: #8AC249;
+  margin:4rem 0 3rem 8rem;
+}
+.right-callback p {
+  font-size: 1.9rem;
+  color: #8AC249;
+  margin:4rem 0 1.5rem 1.5rem;
+}
+.contacts-sales{
+  margin-top: 4rem;
+  font-size: 1.4rem;
+  margin-left: 1.5rem;
+  font-weight: 500;
+}
+.contacts-sales span{
+  color: #2095F2;
+  margin-top: 0.5rem;
+}
+.contacts-sales a{
+  text-decoration: none;
+}
+#email_error, #message_error, #mail_fail, #mail_success{
+  display: none;
+}
+.success img{
+  max-width: 100%;
+}
+.error{
+  font-size: 1.6rem;
+  color: #2095F2;
+  position: absolute;
+  left: 8rem;
+}
+#message_error{
+  top: 24rem;
+}
+#email_error{
+  top: 40rem;
+}
+#mail_success{
+  position: absolute;
+  top: 8rem;
+  left: 0rem;
+  width: 100%;
+  height: 48rem;
+  background-color: rgba(138, 194, 73, .55);
+}
+.web-pic img{
+  max-width: 85%;
+}
+.cancel-mob{
+  display: none;
+}
+.web-pic{
+  text-align: center;
+}
+.text-web-s{
+  font-size: 2rem;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto 4rem;
+}
+.web-s{
+  position: relative;
+}
+.ulli li, .ulli2 li{
+  color:#747474;
+  font-size: 1.5rem;
+}
+.bottom-close{
+  height: 4rem;
+  width: 100%;
+  background-color: #03A9F5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: -3rem;
+  display: block;
+  cursor: pointer;
+}
+.bottom-close p{
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 4rem;
+}
+.logo-mob{
+  display: none;
+}
+@media (max-width: 641px){
+  .left-part{
+    display: none;
+  }
+  .socials-full{
+    display: none;
+  }
+  .left-part.active{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    width: 60%;
+    display: block;
+  }
+  .cancel-logo{
+    width: 8rem;
+    height: 8rem;
+    background-image: url(../img/mobile/cancel-mob.png);
+    background-size: cover;
+    position: absolute;
+    top:2rem;
+    left:2rem;
+    display: block;
+    z-index: 3;
+  }
+  .logo-mob {
+    display: block;
+    width: 9rem;
+    height: 9rem;
+    background-image: url(../img/mobile/logo-mob.png);
+    background-size: cover;
+    position: absolute;
+    top: 8.5rem;
+    right: 15rem;
+  }
+  .all-top{
+    height: 16rem;
+  }
+  .top-menu a{
+    font-size: 2.4rem;
+    padding:2.2rem 2.4rem 1.2rem;
+  }
+  .top-menu a:before{
+    height: 0.3rem;
+  }
+  .popup-full2.active{
+    top:0;
+  }
+  .all-top .article{
+    margin-left: 15.5rem;
+  }
+  .card-div-all{
+    width: 60%;
+    height: 90rem;
+    left: 50%;
+    top: 10%;
+    margin-left: -30%;
+  }
+  .card-div{
+    width: 100%;
+  }
+  .top-card{
+    height: 14rem;
+  }
+  .logo-card{
+    width: 14rem;
+    height: 14rem;
+  }
+  .pop_card_name {
+    font-size: 3.4rem;
+    padding-top: 3rem;
+  }
+  .pop_card_categ{
+    font-size: 2.5rem;
+  }
+  .img-card{
+    height: 46rem;
+  }
+  .testi-title{
+    padding-top: 3rem;
+    font-size: 3.5rem;
+  }
+  .testi-img{
+    width: 18rem;
+    height: 18rem;
+  }
+  .testiimg-about{
+    font-size: 2rem;
+  }
+  .testi-text{
+    font-size: 2.4rem;
+  }
+  .category-tag, .tags-tags, .tools-tag {
+    font-size: 2.5rem;
+  }
+  .leftArr {
+    left: 11.5rem;
+  }
+  .rightArr{
+    right: 11.5rem;
+  }
+  .arrslider {
+    top: calc(45rem + 10%);
+  }
+  .ulli li, .ulli2 li {
+    color: #747474;
+    font-size: 2rem;
+  }
+  .title-menu {
+    margin-top: 6rem;
+    font-size: 3.8rem;
+  }
+  .content-mid{
+    font-size: 2rem;
+  }
+  .services .block-width .contact-button {
+    padding-bottom: 2.5rem;
+    margin-top: 2rem;
+  }
+  .contact-button a{
+    font-size: 3.5rem;
+    border-radius: 0.8rem;
+  }
+  .add-pr .contact-button a{
+    font-size: 2rem;
+    border-radius: 0.4rem;
+  }
+  .p-mid{
+    font-size: 3.5rem;
+    font-weight: 500;
+  }
+  .android-s .block-fourth p, .android-s .block-fourth ul li {
+    font-size: 2.3rem;
+  }
+  .title-appr{
+    font-size: 4rem;
+  }
+  .about-appr {
+    font-size: 2.2rem;
+  }
+  .ios-s .block-fourth-ios h3{
+    font-size: 3.2rem;
+  }
+  .ios-s .block-fourth-ios p {
+    font-size: 2.8rem;
+  }
+  .ios-s .block-fourth-ios ul li {
+    font-size: 2.5rem;
+  }
+  .text-web-s{
+    font-size: 2.7rem;
+  }
+  .web-pic img {
+    max-width: 75%;
+  }
+  .wearables-text p{
+    margin-top: 4rem;
+    font-size: 2rem;
+  }
+  .content-hid p{
+    font-size: 2rem;
+  }
+  .p-nt{
+    font-size: 4.8rem !important;
+  }
+  .logo-div {
+    height: 50rem;
+  }
+  .block-logo {
+    height: 37rem;
+  }
+  .block-logo:before, .block-logo:after {
+    bottom: 9.5rem;
+    width: 3rem;
+    height: 5rem;
+  }
+  .block-logo:before {
+    left: 29rem;
+  }
+  .block-logo.active:after {
+    right: 25rem;
+  }
+  .block-logo img {
+    width: 20rem;
+    height: 20rem;
+    margin-top: 10rem;
+  }
+  .block-logo:after {
+    right: 29rem;
+  }
+  .logo-div .contact-button a{
+    font-size: 3.4rem;
+    padding: 2.1rem 4rem 2rem 4rem;
+    border-radius: 0.8rem;
+  }
+  nav{
+    height: 50rem;
+  }
+  .nav_item {
+    height: 10rem;
+    line-height: 10rem;
+    text-indent: 5rem;
+  }
+  .nav_item:before {
+    left: 10rem;
+    margin: -2rem 0 0 -2rem;
+    height: 4rem;
+    width: 4rem;
+  }
+  .text-menu {
+    margin-left: 12.5rem;
+    font-size: 4rem;
+  }
+  .nav_item:after {
+    left: 10rem;
+    margin: -1rem 0 0 -1rem;
+    height: 2rem;
+    width: 2rem;
+  }
+  .pages {
+    width: calc(100% - 0rem);
+  }
+  .page {
+    width: calc(100% + 9rem);
+  }
+  .main-text {
+    font-size: 7rem;
+  }
+  .main-href{
+    margin-top: 6.5rem;
+  }
+  .page .menu-button{
+    width: 7rem;
+    height: 7rem;
+    float: left;
+  }
+  .menu-button{
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    background-image: url(../img/mobile/menu-mob.png);
+    background-size: cover;
+    margin: 0 0 0 5rem;
+  }
+  .text-menu:after{
+    right: 13.5rem;
+    margin-top: 2rem;
+    width: 4rem;
+    height: 4rem;
+  }
+  .nav_item.active .text-menu:after {
+    right: 7.5rem;
+  }
+  footer{
+    height: 6rem;
+  }
+  .footer{
+    height: 6.5rem;
+  }
+  .button-next:after {
+    width: 5rem;
+    height: 5rem;
+    right: 10rem;
+    margin-top: -2.3rem;
+    top: 50%;
+  }
+  .content{
+    padding-bottom: 6.5rem;
+  }
+  .bottom-button{
+    height: 6.5rem;
+    width: 45rem;
+  }
+  .bottom-button a{
+    line-height: 6.5rem;
+    font-size: 3rem;
+  }
+  .button-next:before{
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 0.8rem solid #fff;
+    margin-top: -1.4rem;
+  }
+  .article-car{
+    font-size: 7rem;
+  }
+  .vac-and img, .vac-ios img{
+    margin-top: 5rem;
+    max-width: 25%;
+  }
+  .careers2 p {
+    font-size: 2.8rem;
+  }
+  .vac-and, .vac-ios, .vac-cw{
+    height: 30rem;
+  }
+  .article-about{
+    font-size: 5.5rem;
+  }
+  .about-mid{
+    font-size: 3rem;
+  }
+  .about ul li{
+    font-size: 2.4rem;
+  }
+  .name-team{
+    font-size: 2.7rem;
+  }
+  .function{
+    font-size: 2rem;
+  }
+  .callback-div{
+    height: 75rem;
+  }
+  .top-callback{
+    height: 12rem;
+  }
+  .top-callback div{
+    font-size: 3.6rem;
+    margin-top: -2rem;
+  }
+  .callback-div .cancel {
+    width: 3rem;
+    height: 3rem;
+    right: 7%;
+    margin-top: -1.5rem;
+  }
+  .bot-callback, .right-callback{
+    height: 63rem;
+  }
+  .left-callback p{
+    font-size: 3rem;
+  }
+  .left-callback form select {
+    height: 6rem;
+    font-size: 2.6rem;
+  }
+  .left-callback form input {
+    font-size: 2rem;
+    height: 6rem;
+  }
+  .nameplus img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .form-img{
+    width: 4rem;
+    margin-left: 1rem;
+  }
+  .form-phone .form-img img{
+    width: 4rem;
+  }
+  .after-form{
+    font-size: 1.35rem;
+  }
+  .right-callback p{
+    font-size: 2.9rem;
+  }
+  .contacts-sales{
+    font-size: 2.15rem;
+  }
+  #email_error{
+    top:55rem;
+  }
+  #message_error{
+    top: 35.5rem;
+  }
+}
+/*iPhone 2G-4S in portrait & landscape*/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  #mail_success {
+    height: 67rem;
+  }
+}
+/*iPhone 5 & 5S in landscape*/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : landscape){
+  .main_con{
+    top:35%;
+  }
+  #mail_success {
+    height: 67rem !important;
+  }
+  #email_error {
+    top: 38rem;
+  }
+  .logo-div{
+    height: 32rem;
+  }
+  .block-logo{
+    height: 23rem;
+  }
+  .block-logo:before, .block-logo:after{
+    bottom:4.5rem;
+  }
+  .block-logo img{
+    margin-top: 1rem;
+  }
+  nav{
+    height: 30rem;
+  }
+  .nav_item{
+    height: 6rem;
+    line-height: 6rem;
+  }
+  .text-menu:after{
+    right: 17.5rem;
+    margin-top: 1rem
+  }
+  .top-menu a{
+    font-size: 2.5rem;
+  }
+  .add-pr .contact-button a{
+    font-size: 4rem;
+  }
+  .project, .add-pr{
+    width: 55.2rem;
+    height: 82.4rem;
+    margin-bottom: 4rem;
+  }
+  .picture-pr{
+    width: 55.2rem;
+    height: 38rem;
+  }
+  .article-pr{
+    font-size: 4rem;
+  }
+  .text-pr{
+    font-size: 3.5rem;
+    height: 25rem;
+  }
+  .text-more a{
+    font-size: 3.4rem;
+  }
+  .title-menu{
+    font-size: 5.8rem;
+  }
+  .block-first{
+    font-size: 3.2rem;
+  }
+  .block-width p{
+    font-size: 4rem;
+    padding-top: 3.5rem;
+  }
+  .services .block-width .contact-button{
+    padding-bottom: 2.5rem;
+  }
+  .block-width .contact-button a{
+    font-size: 5.5rem;
+  }
+  .p-mid{
+    font-size: 5.5rem;
+  }
+  .android-s .block-fourth p, .android-s .block-fourth ul li {
+    font-size: 4.3rem;
+  }
+  .approach p{
+    font-size: 7rem;
+  }
+  .img-bl{
+    width: 39.6rem;
+  }
+  .title-appr {
+    font-size: 5rem;
+  }
+  .about-appr {
+    font-size: 3.2rem;
+  }
+  .ios-s .block-third{
+    font-size: 3.5rem;
+  }
+  .ios-s .block-fourth-ios h3 {
+    font-size: 4.5rem;
+  }
+  .ios-s .block-fourth-ios p {
+    font-size: 3.8rem;
+  }
+  .ios-s .block-fourth-ios ul li {
+    font-size: 4rem;
+  }
+  .text-web-s {
+    font-size: 3.7rem;
+    width: 70%;
+  }
+  .left-img {
+    float: none;
+    margin: 0 auto;
+    width: 60%;
+  }
+  .wearables-text p {
+    text-align: center;
+    font-size: 4rem;
+  }
+  .p-nt {
+    font-size: 7.8rem !important;
+  }
+  .content-mid{
+    font-size: 4rem;
+  }
+  .content-hid{
+    float: none;
+    text-align: center;
+    font-size: 4rem;
+  }
+  .content-hid p{
+    font-size: 4rem;
+    text-align: center;
+    float: none;
+  }
+  .careers2 .article-car{
+    margin-left: 20rem;
+    text-align: left;
+  }
+  .careers2 .menu-button{
+    margin: 1rem 0 0 5rem;
+  }
+  .careers2 .logo-mob{
+    top:0.5rem;
+    right: 25rem;
+  }
+  .img-vac {
+    margin: 10rem auto 0;
+    width: 75%;
+  }
+  .vac-and, .vac-ios, .vac-cw {
+    height: 35rem !important;
+    width: 48%;
+  }
+  .careers2 p {
+    font-size: 5.8rem;
+  }
+  .our-perks {
+    font-size: 9rem;
+    margin-top: 6rem;
+  }
+  .img-vac2{
+    width: 90%;
+  }
+  .perk{
+    width: 80%;
+  }
+  .perk3{
+    margin-bottom: 5rem;
+  }
+  .page {
+    width: calc(100% + 3rem);
+  }
+  .logo-mob{
+    top: 9.5rem;
+    right: 10rem;
+  }
+  .menu-button {
+    margin: 0 0 0 5rem;
+  }
+  .article-about {
+    font-size: 7.5rem;
+  }
+  .about-mid {
+    font-size: 4.5rem;
+  }
+  .about-mid2{
+    width: 90%;
+  }
+  .about-years {
+    width: 80%;
+  }
+  .about ul li {
+    font-size: 5rem;
+  }
+  .about ul {
+    margin: 4rem 0 0 6.5rem;
+  }
+  .article-about {
+    font-size: 8.5rem;
+  }
+  .team{
+    width: 49%;
+  }
+  .name-team {
+    font-size: 4.7rem;
+  }
+  .function {
+    font-size: 3.5rem;
+  }
+  .left-callback p {
+    font-size: 3rem;
+  }
+  .left-callback p {
+      font-size: 1.9rem;
+      margin: 2rem 0 1rem 8rem;
+  }
+  .callback-div {
+    height: 63rem;
+    width: 70%;
+    left:30%;
+    top:0;
+  }
+  .top-callback {
+    height: 8rem;
+  }
+  .bot-callback, .right-callback {
+    height: 54.5rem;
+  }
+  .left-callback form select {
+    height: 4rem;
+    font-size: 2.2rem;
+  }
+  .after-form{
+    margin-top: 0.5rem;
+  }
+  .right-callback p {
+    font-size: 1.9rem;
+    margin: 2rem 0 0 1.5rem;
+  }
+  .contacts-sales {
+    margin-top: 3rem;
+  }
+  .card-div-all{
+    height: 55rem;
+  }
+  .top-card .cancel {
+    width: 3.4rem;
+    height: 3.4rem;
+    margin-top: -1.7rem;
+  }
+  .bottom-close {
+    height: 8rem;
+    margin-bottom: -8rem;
+  }
+  .bottom-close p {
+    font-size: 2.4rem;
+    line-height: 8rem;
+  }
+  .wearables-text{
+    width: 90%;
+  }
+}
+@media (max-width: 520px){
+  .left-callback form select {
+    margin-left: 7rem;
+    width: 82%;
+  }
+  form button {
+    padding: 1rem 1rem;
+    border-radius: 0.4rem;
+    font-size: 3rem;
+  }
+  .sendButton{
+    margin-right: 2.2rem;
+  }
+  .nav_item:after {
+    margin: -1rem 0 0 -1rem;
+  }
+}
+@media (max-width: 481px){
+  .picture-pr{
+    width: 39.2rem;
+    height: 28rem;
+  }
+  .nav_item:after {
+    margin: -1rem 0 0 -0.5rem;
+  }
+  .nav_item:before {
+    left: 10.5rem;
+    margin: -2rem 0 0 -2rem;
+    height: 4rem;
+    width: 4rem;
+  }
+  .page {
+    width: calc(100% + 0rem);
+  }
+  .project, .add-pr {
+    width: 39.2rem;
+    height: 69.4rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .article-pr{
+    font-size: 4.5rem;
+  }
+  .text-pr{
+    font-size: 2.6rem;
+    height: 22rem;
+  }
+  .text-more a{
+    font-size: 2.8rem;
+  }
+  .text-more a img {
+    height: 2rem;
+  }
+  .project:nth-child(even) {
+    margin: 0;
+  }
+  .contact-button a {
+    font-size: 2.7rem;
+    padding: 2.1rem 4rem 2rem 4rem;
+  }
+  .vac-cw a img {
+    margin-top: 2.8rem;
+  }
+  .logo-div {
+    height: 40rem;
+  }
+  .block-logo {
+    height: 30rem;
+  }
+  .block-logo img{
+    margin-top: 3rem;
+  }
+  footer {
+    height: 8rem;
+  }
+  .footer_cont{
+    font-size: 2.2rem;
+  }
+  .card-div-all{
+    height: 80rem;
+  }
+  .text-menu:after{
+    margin-top: 3rem;
+  }
+  .careers2 .logo-mob{
+    top: -1.5rem;
+    right: 3rem;
+  }
+  .article-car{
+    text-align: left;
+    margin-left: 20rem;
+  }
+  .careers2 .menu-button{
+    margin: 0.5rem 0 0 5rem;
+  }
+  .top-menu a:before {
+    height: 0.5rem;
+  }
+}
+@media (max-width: 414px){
+  #email_error {
+    top: 315rem;
+  }
+  #message_error {
+    top: 238.5rem;
+  }
+  .success img {
+    max-width: 97%;
+    position: absolute;
+    bottom: 0;
+  }
+  #mail_success {
+    top: 8rem;
+    height: 351rem;
+  }
+}
+/*iPhone 6 Plus in portrait*/
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : portrait) {
+  .main_page .menu-button {
+    width: 16rem;
+    height: 16rem;
+    margin: 5rem 0 0 5rem;
+  }
+  #email_error {
+    top: 315rem;
+  }
+  #message_error {
+    top: 238.5rem;
+  }
+  .success img {
+    max-width: 97%;
+    position: absolute;
+    bottom: 0;
+  }
+  #mail_success {
+    top: 8rem;
+    height: 351rem;
+  }
+  .main-text {
+    font-size: 14rem;
+  }
+  .all-go {
+    width: 45rem;
+  }
+  .href_go {
+    width: 35rem;
+    height: 35rem;
+    margin: 5rem 2rem 0 2rem;
+    background-size: 148rem auto;
+  }
+  .ios_go {
+    background-position: -35.5rem 0;
+  }
+  .uxui_go {
+    background-position: -71.5rem 0;
+  }
+  .text-href_go{
+    font-size: 6rem;
+  }
+  .logo-div {
+    height: 75rem !important;
+  }
+  .block-logo {
+    height: 57rem !important;
+  }
+  .block-logo:before {
+    left: 20rem;
+  }
+  .block-logo:before, .block-logo:after {
+    bottom: 10.5rem;
+    width: 5rem;
+    height: 7rem;
+  }
+  .block-logo img {
+    margin-top: 13rem !important;
+    width: 40rem;
+    height: 40rem;
+  }
+  .block-logo.active:after {
+    right: 10rem;
+  }
+  .logo-div .contact-button a{
+    font-size: 6.4rem;
+  }
+  .block-logo:after {
+    right: 20rem;
+  }
+  nav {
+    height: 120rem;
+  }
+  .nav_item {
+    height: 25rem;
+    line-height: 25rem;
+    text-indent: 7rem;
+  }
+  .nav_item:before {
+    left: 10.5rem;
+    margin: -4rem 0 0 -4rem;
+    height: 8rem;
+    width: 8rem;
+  }
+  .text-menu {
+    margin-left: 15.5rem;
+    font-size: 7rem;
+  }
+  .text-menu:after {
+    margin-top: 8.5rem;
+    width: 8rem;
+    height: 8rem;
+  }
+  .nav_item:after {
+    left: 10rem;
+    margin: -2rem 0 0 -1.5rem;
+    height: 4rem;
+    width: 4rem;
+  }
+  .socials {
+    top: -20rem;
+    height: 20rem;
+  }
+  footer {
+    height: 20rem;
+  }
+  .footer_cont {
+    font-size: 4.2rem;
+  }
+  .callback-div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    overflow-y: scroll;
+  }
+  .top-callback {
+    height: 25rem;
+  }
+  .top-callback div {
+    font-size: 7rem;
+    margin-top: -4rem;
+    margin-left: 20rem;
+  }
+  .callback-div .cancel-mob{
+    display: block;
+    margin-top: 1.5rem;
+  }
+  .right-callback{
+    width: 100%;
+    height: 145rem;
+  }
+  .left-callback{
+    width: 100%;
+    height: 140rem;
+  }
+  .right-callback p {
+    font-size: 7rem;
+    margin: 6rem 0 6rem 19rem;
+  }
+  .contacts-sales{
+    margin-left: 19rem;
+    font-size: 6rem;
+    margin-top: 8rem;
+  }
+  .left-callback p{
+    font-size: 7rem;
+    margin-left: 19rem;
+  }
+  .left-callback form select {
+    margin-left: 18rem;
+    width: 80%;
+    height: 14rem;
+    font-size: 6rem;
+  }
+  .left-callback form input {
+    font-size: 5rem;
+    height: 8rem;
+    margin-top: 8rem;
+    margin-left: 5rem;
+  }
+  .nameplus input {
+    width: 75% !important;
+    margin: 4rem 0;
+  }
+  .nameplus img {
+    width: 8rem;
+    height: 8rem;
+  }
+  .form-img {
+    width: 10rem;
+    margin-left: 5rem;
+    margin-top: 8rem;
+  }
+  .line-form {
+    width: 67%;
+    height: 0.5rem;
+    margin-left: 20rem;
+  }
+  .nameplus {
+    height: 36rem;
+  }
+  #questions{
+    margin-left: 19rem !important;
+  }
+  #lastname{
+    margin-left: 20rem;
+  }
+  .form-phone .form-img img {
+    width: 8rem;
+  }
+  .after-form {
+    margin:10rem 10rem 0 19.5rem;
+    font-size: 4rem;
+  }
+  .sendButton {
+    margin-right: 11rem;
+  }
+  form button {
+    padding: 3rem 5rem;
+    border-radius: 0.8rem;
+    font-size: 6rem;
+  }
+  .error {
+    font-size: 4.6rem;
+    left: 20rem;
+  }
+  #message_error {
+    top: 141.5rem;
+  }
+  #email_error {
+    top: 235rem;
+  }
+  .callback-div .cancel-mob {
+    margin-top: -3.5rem;
+    position: absolute;
+    top: 50%;
+    width: 8rem;
+    height: 7rem;
+  }
+  .right-callback{
+    height: 165rem;
+  }
+    .project, .add-pr{
+    width: 118.2rem;
+    height: 185rem;
+    margin:0 4rem;
+  }
+  .add-pr .contact-button a {
+    font-size: 7rem;
+    border-radius: 0.4rem;
+  }
+  .project, .add-pr{
+    margin-top: 6rem !important;
+    margin-bottom: 6rem !important;
+  }
+  .picture-pr {
+    width: 118.2rem;
+    height: 82rem;
+  }
+  .article-pr {
+    font-size: 7rem;
+    margin: 8rem 0 0 4.5rem;
+  }
+  .text-pr {
+    font-size: 6.5rem;
+    height: 55.5rem;
+    margin: 9.5rem 14.5rem 0 4.5rem;
+  }
+  .text-more {
+    margin-left: 5.5rem;
+  }
+  .button-next:after{
+    margin-top: -3rem;
+    right: 5rem;
+    width: 6rem;
+    height: 6rem;
+  }
+  .text-more a {
+    font-size: 6rem;
+  }
+  .text-more a img {
+    height: 4.5rem;
+  }
+    .all-top {
+    height: 40rem;
+    margin-top: 0rem;
+  }
+  .all-top .article{
+    font-size: 10rem;
+    padding-bottom: 18rem;
+    margin-left: 25rem;
+    margin-top: 11rem;
+  }
+  .top-menu{
+    padding-left: 17rem;
+  }
+  .menu-a:last-child{
+    margin-right: 41rem;
+  }
+  .overflow-top-menu{
+    overflow:hidden;
+    width: 100%;
+    height: 14rem
+  }
+  .wrapper-menu{
+    width: 100%;
+    height: 20rem;
+    overflow: scroll;
+    white-space:nowrap;
+  }
+  .top-menu a:before{
+    height: 1rem;
+    bottom: -0.9rem;
+  }
+  .top-menu a {
+    font-weight: 400;
+    font-size: 6rem;
+    padding: 2.2rem 15rem 1.2rem;
+  }
+  .page .menu-button {
+    width: 12rem;
+    height: 12rem;
+    margin: 0.5rem 0 0 5rem;
+  }
+  .logo-mob {
+    width: 15rem;
+    height: 15rem;
+    right: 8rem;
+  }
+  .add-pr .contact-button a{
+    font-size: 10rem;
+  }
+  .title-menu{
+    font-size: 10rem;
+  }
+  .block-first p:nth-child(2), .block-first p:nth-child(1){
+    width: 100%;
+  }
+  .block-width p{
+    font-size: 6rem;
+  }
+  .p-mid{
+    font-size: 6rem;
+  }
+  .android-s .block-fourth p, .android-s .block-fourth ul li {
+    font-size: 6rem;
+  }
+  .services .block-first{
+    text-align: center;
+    font-size: 6rem;
+  }
+  .button-next:before{
+    margin-top: -2rem;
+  }
+  .ios-s .block-fourth-ios h3 {
+    font-size: 8rem;
+  }
+  .ios-s .block-fourth-ios p {
+    font-size: 6rem;
+  }
+  .ios-s .block-fourth-ios img {
+    max-width: 100%;
+  }
+  .ios-s .block-fourth-ios ul li {
+    font-size: 5.5rem;
+  }
+  .web-pic img {
+    max-width: 95%;
+  }
+  .text-web-s {
+    font-size: 6rem;
+    width: 80%;
+  }
+  .p-nt {
+    font-size: 9rem !important;
+  }
+  .wearables-text{
+    width: 52%;
+  }
+  .wearables-text p, .content-hid p {
+    font-size: 5rem;
+  }
+  .uxui-s .moremore {
+    left: 49%;
+  }
+  .moremore{
+    font-size: 4rem;
+  }
+  .bottom-button a {
+    line-height: 12rem;
+    font-size: 4rem;
+  }
+    .card-div-all{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin-left: 0;
+  }
+  .top-card{
+    height: 20rem;
+  }
+  .cancel{
+    display: none;
+  }
+  .cancel-mob{
+    position: absolute;
+    width: 1.4rem;
+    height: 1.4rem;
+    left: 4rem;
+    top: 25%;
+    display: block;
+    margin-top: 0.5rem;
+  }
+  .logo-card {
+    top: 0;
+    left: 75%;
+    width: 20rem;
+    height: 20rem;
+  }
+  .pop_card_name, .pop_card_categ {
+    margin-left: 35rem;
+  }
+  .pop_card_name {
+    font-size: 7.5rem;
+  }
+  .pop_card_categ {
+    font-size: 4.5rem;
+  }
+  .img-card {
+    height: 78rem;
+  }
+  .right-card{
+    float: left;
+    width: 100%;
+    border-top: 0.2rem solid #DDDDDD
+  }
+  .left-card{
+    width: 100%;
+  }
+  .testi-title{
+    font-size: 6.5rem;
+    padding-top: 10rem;
+    margin-left: 12rem;
+  }
+  .testi-img{
+    margin: 5rem auto 0;
+    width: 40rem;
+    height: 40rem;
+  }
+  .testiimg-about{
+    font-size: 3rem;
+    margin-top: 5rem;
+  }
+  .testi-text{
+    width: 80%;
+    margin: 5rem auto 0;
+    font-size: 6rem;
+  }
+  .categ-tag{
+    margin-top: 5rem;
+  }
+  .category-tag, .tags-tags, .tools-tag{
+    font-size: 6rem;
+    margin: 0.5rem 0 0.5rem 11.5rem;
+  }
+  .href-iOS{
+    margin-top: 10rem;
+    text-align: center;
+  }
+  .href-Android{
+    text-align: center;
+    margin:2rem 0 7rem;
+  }
+  .bottom-close{
+    display: none;
+  }
+  .testiimg-about{
+    font-size: 4.5rem;
+  }
+  .ulli li, .ulli2 li {
+    color: #747474;
+    font-size: 6rem;
+    width: 80%;
+  }
+  .bottom-mob{
+    display: block;
+    height: 16rem;
+    width: 100%;
+    background-color:rgba(148, 212, 242, .3);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  .prev-mob, .next-mob{
+    width: 50%;
+    height: 100%;
+    float:left;
+    line-height: 16rem;
+    display: block;
+    z-index: 2;
+  }
+  .prev-mob p, .next-mob p{
+    line-height: 16rem;
+    margin: 0;
+    font-size: 5rem;
+    padding-left: 20rem;
+  }
+  .leftArr-mob{
+    background-image: url(../img/mobile/prev-slide-mob.png);
+    left:5rem;
+  }
+  .rightArr-mob{
+    background-image: url(../img/mobile/next-slide-mob.png);
+    right:5rem;
+  }
+  .arrslider2{
+    position: fixed;
+    bottom: 3rem;
+    width: 10rem;
+    height: 10rem;
+    z-index: 1;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+  }
+  .arrslider{
+    display: none;
+  }
+  .card-content{
+    padding-bottom: 16rem;
+  }
+  .article-car{
+    font-size: 10rem;
+    margin-left: 25rem;
+    text-align: left;
+    padding-top: 4rem;
+    margin-top: 0;
+  }
+  .careers2 .menu-button{
+    margin: 2.5rem 0 0 5rem;
+  }
+  .careers2 .logo-mob{
+    top: 1.5rem;
+  }
+  .img-vac {
+    width: 90%;
+    margin: 20rem auto 0;
+  }
+  .our-perks{
+    font-size: 12rem;
+    text-align: center;
+    margin-top: 15rem;
+  }
+  .vac-and, .vac-ios, .vac-cw {
+    height: 50rem;
+    width: 48%;
+  }
+  .vac-and img, .vac-ios img {
+    margin-top: 5rem;
+    max-width: 35%;
+  }
+  .careers2 p {
+    font-size: 6.8rem;
+  }
+  .img-vac2{
+    width: 100%;
+  }
+  .perk {
+    width: 100rem;
+  }
+  .vac-cw{
+    margin-top: 5rem;
+  }
+  .article-about {
+    font-size: 10rem;
+    margin-top: 2rem;
+  }
+  .about-mid {
+    font-size: 6.5rem;
+  }
+  .about-years {
+    width: 90%;
+  }
+  .about-mid2 {
+    width: 80%;
+  }
+  .about ul li {
+    font-size: 5.5rem;
+  }
+  .team{
+    width: 49%;
+  }
+  .name-team {
+    font-size: 6rem;
+  }
+  .function {
+    font-size: 5rem;
+  }
+  .services .block-width .contact-button {
+    padding-bottom: 3.5rem;
+  }
+  .contact-button a {
+    font-size: 5.7rem;
+    padding: 2.1rem 4rem 2rem 4rem;
+  }
+  .bottom-button {
+    height: 11.5rem;
+  }
+  .footer {
+    height: 11.5rem;
+  }
+  .content {
+    padding-bottom: 11.5rem;
+  }
+  .ios-s .block-third{
+    font-size: 4rem;
+  }
+  .img-bl {
+    width: 50%;
+    margin-top: 10rem;
+  }
+  .img-bl img {
+    max-width: 90%;
+    vertical-align: middle;
+  }
+  .text-appr {
+    width: 100%;
+  }
+  .title-appr {
+    font-size: 9rem;
+  }
+  .about-appr, .title-appr{
+    text-align: center;
+    margin-top: 5rem;
+  }
+  .about-appr {
+    font-size: 6rem;
+  }
+  .appr-block{
+    margin-bottom: 5rem;
+  }
+  .approach p {
+    font-size: 14rem;
+  }
+  .text-web-s {
+    font-size: 6rem;
+    width: 80%;
+  }
+  .p-nt {
+    font-size: 9rem !important;
+  }
+  .wearables-text{
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+  .wearables-text p, .content-hid p {
+    font-size: 5rem;
+    text-align: center;
+  }
+  .uxui-s .moremore {
+    left: 44%;
+  }
+  .uxui-s .moremore {
+    left: 45%;
+  }
+  .moremore{
+    font-size: 4rem;
+  }
+  .left-img {
+    float: none;
+    margin: 0 auto;
+    width: 60%;
+  }
+  .perk3{
+    margin-bottom: 10rem;
+  }
+  .about ul {
+    margin: 4rem 0 0 0.5rem;
+  }
+  .contact-button-more a {
+    font-size: 7.4rem;
+    padding: 2.5rem 4rem 2.5rem 4rem;
+  }
+  .contact-button-more {
+    margin-top: 15rem;
+    margin-bottom: 10rem;
+  }
+}
+/*iPhone 6 Plus in landscape*/
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : landscape) {
+  .callback-div{
+    height: 65rem;
+  }
+  #message_error {
+    top: 27rem;
+  }
+  #email_error {
+    top: 44rem;
+  }
+  #mail_success {
+    height: 57rem;
+  }
+  .left-callback form input{
+    height: 5rem;
+  }
+  .nameplus img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .right-callback{
+    height: 57rem;
+  }
+}
+/*iPhone 6 in landscape*/
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) {
+  .callback-div {
+    height: 68rem;
+  }
+
+  #mail_success {
+    height: 60rem;
+  }
+  .right-callback {
+    height: 60rem;
+  }
+  .form-img {
+    margin-top: 0.4rem;
+  }
+  .wearables-s .moremore{
+    left: 9%;
+  }
+  .vac-and, .vac-ios, .vac-cw{
+    height: 25rem;
+  }
+}
+@media (max-width: 376px){
+  .menu-button {
+    width: 12rem;
+    height: 12rem;
+    margin: -1.5rem 0 0 5rem;
+  }
+  nav{
+    height: 50rem;
+  }
+  .all-top .logo-mob{
+    top:8.5rem;
+  }
+  .main_con{
+    margin-top: -15rem;
+  }
+  .main-text{
+    font-size: 13rem;
+  }
+  .all-go{
+    width: 35.5rem;
+  }
+  .logo-mob {
+    width: 15rem;
+    height: 15rem;
+    right: 8rem;
+  }
+  .ios_go {
+    background-position: -27rem 0;
+  }
+  .uxui_go {
+    background-position: -55.5rem 0;
+  }
+  .main_page .menu-button {
+    margin-top: 5.5rem;
+  }
+  .page .menu-button {
+    width: 15rem;
+    height: 15rem;
+  }
+  .href_go{
+    background-size: 112rem auto;
+    width: 25rem;
+    height: 25rem;
+  }
+  .text-href_go{
+    font-size: 5rem;
+  }
+  .project, .add-pr{
+    width: 118.2rem;
+    height: 185rem;
+    margin:0 4rem;
+  }
+  .add-pr .contact-button a {
+    font-size: 7rem;
+    border-radius: 0.4rem;
+  }
+  .project, .add-pr{
+    margin-top: 6rem !important;
+    margin-bottom: 6rem !important;
+  }
+  .picture-pr {
+    width: 118.2rem;
+    height: 82rem;
+  }
+  .article-pr {
+    font-size: 7rem;
+    margin: 8rem 0 0 4.5rem;
+  }
+  .text-pr {
+    font-size: 6.5rem;
+    height: 55.5rem;
+    margin: 9.5rem 14.5rem 0 4.5rem;
+  }
+  .text-more {
+    margin-left: 5.5rem;
+  }
+  .button-next:after{
+    margin-top: -3rem;
+    right: 5rem;
+    width: 6rem;
+    height: 6rem;
+  }
+  .text-more a {
+    font-size: 6rem;
+  }
+  .text-more a img {
+    height: 4.5rem;
+  }
+  .contact-button a {
+    font-size: 5rem;
+    padding: 4.5rem 7rem 4.5rem 7rem;
+    border-radius: 2rem;
+  }
+  .footer{
+    height: 11rem;
+  }
+  .content{
+    padding-bottom: 11rem;
+  }
+  .bottom-button a{
+    line-height: 11rem;
+    font-size: 3rem;
+  }
+  .bottom-button{
+    height: 11rem;
+    width: 40rem;
+  }
+  .button-next:before{
+    width: 2rem;
+    height: 2rem;
+    border: 1rem solid #fff;
+    margin-top: -1.5rem;
+  }
+  .all-top {
+    height: 40rem;
+    margin-top: 0rem;
+  }
+  .all-top .article{
+    font-size: 10rem;
+    padding-bottom: 18rem;
+    margin-left: 25rem;
+    margin-top: 11rem;
+  }
+  .top-menu{
+    padding-left: 17rem;
+  }
+  .menu-a:last-child{
+    margin-right: 41rem;
+  }
+  .overflow-top-menu{
+    overflow:hidden;
+    width: 100%;
+    height: 14rem
+  }
+  .wrapper-menu{
+    width: 100%;
+    height: 20rem;
+    overflow: scroll;
+    white-space:nowrap;
+  }
+  .top-menu a:before{
+    height: 1rem;
+    bottom: -0.9rem;
+  }
+  .top-menu a {
+    font-weight: 400;
+    font-size: 6rem;
+    padding: 2.2rem 15rem 1.2rem;
+  }
+  .title-menu{
+    font-size: 10rem;
+  }
+  .block-first p:nth-child(2), .block-first p:nth-child(1){
+    width: 100%;
+  }
+  .block-width p{
+    font-size: 6rem;
+  }
+  .p-mid{
+    font-size: 6rem;
+  }
+  .android-s .block-fourth p, .android-s .block-fourth ul li {
+    font-size: 6rem;
+  }
+  .services .block-first{
+    text-align: center;
+    font-size: 6rem;
+  }
+  .button-next:before{
+    margin-top: -2rem;
+  }
+  .ios-s .block-fourth-ios h3 {
+    font-size: 8rem;
+  }
+  .ios-s .block-fourth-ios p {
+    font-size: 6rem;
+  }
+  .ios-s .block-fourth-ios img {
+    max-width: 100%;
+  }
+  .ios-s .block-fourth-ios ul li {
+    font-size: 5.5rem;
+  }
+  .web-pic img {
+    max-width: 95%;
+  }
+  .text-web-s {
+    font-size: 6rem;
+    width: 80%;
+  }
+  .p-nt {
+    font-size: 9rem !important;
+  }
+  .wearables-text{
+    width: 52%;
+  }
+  .wearables-text p, .content-hid p {
+    font-size: 5rem;
+  }
+  .uxui-s .moremore {
+    left: 49%;
+  }
+  .moremore{
+    font-size: 4rem;
+  }
+  .bottom-button a {
+    line-height: 12rem;
+    font-size: 4rem;
+  }
+  .card-div-all{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin-left: 0;
+  }
+  .top-card{
+    height: 20rem;
+  }
+  .cancel{
+    display: none;
+  }
+  .cancel-mob{
+    position: absolute;
+    width: 1.4rem;
+    height: 1.4rem;
+    left: 4rem;
+    top: 25%;
+    display: block;
+    margin-top: 0.5rem;
+  }
+  .logo-card {
+    top: 0;
+    left: 75%;
+    width: 20rem;
+    height: 20rem;
+  }
+  .pop_card_name, .pop_card_categ {
+    margin-left: 35rem;
+  }
+  .pop_card_name {
+    font-size: 7.5rem;
+  }
+  .pop_card_categ {
+    font-size: 4.5rem;
+  }
+  .img-card {
+    height: 78rem;
+  }
+  .right-card{
+    float: left;
+    width: 100%;
+    border-top: 0.2rem solid #DDDDDD
+  }
+  .left-card{
+    width: 100%;
+  }
+  .testi-title{
+    font-size: 6.5rem;
+    padding-top: 10rem;
+    margin-left: 12rem;
+  }
+  .testi-img{
+    margin: 5rem auto 0;
+    width: 40rem;
+    height: 40rem;
+  }
+  .testiimg-about{
+    font-size: 3rem;
+    margin-top: 5rem;
+  }
+  .testi-text{
+    width: 80%;
+    margin: 5rem auto 0;
+    font-size: 6rem;
+  }
+  .categ-tag{
+    margin-top: 5rem;
+  }
+  .category-tag, .tags-tags, .tools-tag{
+    font-size: 6rem;
+    margin: 0.5rem 0 0.5rem 11.5rem;
+  }
+  .href-iOS{
+    margin-top: 10rem;
+    text-align: center;
+  }
+  .href-Android{
+    text-align: center;
+    margin:2rem 0 7rem;
+  }
+  .bottom-close{
+    display: none;
+  }
+  .testiimg-about{
+    font-size: 4.5rem;
+  }
+  .ulli li, .ulli2 li {
+    color: #747474;
+    font-size: 6rem;
+    width: 80%;
+  }
+  .bottom-mob{
+    display: block;
+    height: 16rem;
+    width: 100%;
+    background-color: green;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  .prev-mob, .next-mob{
+    width: 50%;
+    height: 100%;
+    float:left;
+    line-height: 16rem;
+    display: block;
+    z-index: 2;
+  }
+  .prev-mob p, .next-mob p{
+    line-height: 16rem;
+    margin: 0;
+    font-size: 5rem;
+    padding-left: 20rem;
+  }
+  .leftArr-mob{
+    background-image: url(../img/mobile/prev-slide-mob.png);
+    left:5rem;
+  }
+  .rightArr-mob{
+    background-image: url(../img/mobile/next-slide-mob.png);
+    right:5rem;
+  }
+  .arrslider2{
+    position: fixed;
+    bottom: 3rem;
+    width: 10rem;
+    height: 10rem;
+    z-index: 1;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+  }
+  .arrslider{
+    display: none;
+  }
+  .card-content{
+    padding-bottom: 16rem;
+  }
+  .article-car{
+    font-size: 10rem;
+    margin-left: 25rem;
+    text-align: left;
+    padding-top: 4rem;
+    margin-top: 0;
+  }
+  .careers2 .menu-button{
+    margin: 2.5rem 0 0 5rem;
+  }
+  .careers2 .logo-mob{
+    top: 1.5rem;
+  }
+  .img-vac {
+    width: 90%;
+    margin: 20rem auto 0;
+  }
+  .our-perks{
+    font-size: 12rem;
+    text-align: center;
+    margin-top: 15rem;
+  }
+  .vac-and, .vac-ios, .vac-cw {
+    height: 50rem;
+    width: 48%;
+  }
+  .vac-and img, .vac-ios img {
+    margin-top: 5rem;
+    max-width: 35%;
+  }
+  .careers2 p {
+    font-size: 6.8rem;
+  }
+  .img-vac2{
+    width: 100%;
+  }
+  .perk {
+    width: 100rem;
+  }
+  .vac-cw{
+    margin-top: 5rem;
+  }
+  .article-about {
+    font-size: 10rem;
+    margin-top: 10rem;
+  }
+  .socials-mob{
+    margin: 8rem 0;
+  }
+  .about-mid {
+    font-size: 6.5rem;
+  }
+  .about-years {
+    width: 90%;
+  }
+  .about-mid2 {
+    width: 80%;
+  }
+  .about ul li {
+    font-size: 5.5rem;
+  }
+  .team{
+    width: 49%;
+  }
+  .name-team {
+    font-size: 6rem;
+  }
+  .function {
+    font-size: 5rem;
+  }
+  .callback-div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    overflow-y: scroll;
+  }
+  .top-callback {
+    height: 25rem;
+  }
+  .top-callback div {
+    font-size: 7rem;
+    margin-top: -4rem;
+    margin-left: 20rem;
+  }
+  .callback-div .cancel-mob{
+    display: block;
+    margin-top: 1.5rem;
+  }
+  .right-callback{
+    width: 100%;
+    height: 145rem;
+  }
+  .left-callback{
+    width: 100%;
+    height: 140rem;
+  }
+  .right-callback p {
+    font-size: 7rem;
+    margin: 6rem 0 6rem 19rem;
+  }
+  .contacts-sales{
+    margin-left: 19rem;
+    font-size: 6rem;
+    margin-top: 8rem;
+  }
+  .left-callback p{
+    font-size: 7rem;
+    margin-left: 19rem;
+  }
+  .left-callback form select {
+    margin-left: 18rem;
+    width: 80%;
+    height: 14rem;
+    font-size: 6rem;
+  }
+  .left-callback form input {
+    font-size: 5rem;
+    height: 8rem;
+    margin-top: 8rem;
+    margin-left: 5rem;
+  }
+  .nameplus input {
+    width: 75% !important;
+    margin: 4rem 0;
+  }
+  .nameplus img {
+    width: 8rem;
+    height: 8rem;
+  }
+  .form-img {
+    width: 10rem;
+    margin-left: 5rem;
+    margin-top: 8rem;
+  }
+  .line-form {
+    width: 67%;
+    height: 0.5rem;
+    margin-left: 20rem;
+  }
+  .nameplus {
+    height: 36rem;
+  }
+  #questions{
+    margin-left: 19rem !important;
+  }
+  #lastname{
+    margin-left: 20rem;
+  }
+  .form-phone .form-img img {
+    width: 8rem;
+  }
+  .after-form {
+    margin:10rem 10rem 0 19.5rem;
+    font-size: 4rem;
+  }
+  .sendButton {
+    margin-right: 11rem;
+  }
+  form button {
+    padding: 3rem 5rem;
+    border-radius: 0.8rem;
+    font-size: 6rem;
+  }
+  .error {
+    font-size: 4.6rem;
+    left: 20rem;
+  }
+  #message_error {
+    top: 141.5rem;
+  }
+  #email_error {
+    top: 235rem;
+  }
+  .left-part.active{
+    width: 80%;
+  }
+  .cancel-logo{
+    width: 12rem;
+    height: 12rem;
+  }
+  .logo-div{
+    height: 90rem;
+  }
+  .block-logo {
+    height: 70rem;
+  }
+  .block-logo img {
+    width: 50rem;
+    height: 50rem;
+    margin-top: 10rem;
+  }
+  .logo-div .contact-button a {
+    font-size: 7rem;
+    border-radius: 2rem;
+  }
+  footer {
+    height: 24rem;
+  }
+  .footer_cont{
+    font-size: 4rem;
+  }
+  .nav_item {
+    height: 25rem;
+    line-height: 25rem;
+    text-indent: 15rem;
+  }
+  .text-menu {
+    font-size: 7rem;
+  }
+  .text-menu:after {
+    right: 13.5rem;
+    margin-top: 6rem;
+    width: 10rem;
+    height: 10rem;
+  }
+  .nav_item:before {
+    left: 10.5rem;
+    margin: -4rem 0 0 -4rem;
+    height: 8rem;
+    width: 8rem;
+  }
+  .nav_item:after {
+    margin: -2rem 0 0 -1.5rem;
+    height: 4rem;
+    width: 4rem;
+  }
+  .block-logo:before, .block-logo:after {
+    bottom: 17.5rem;
+    width: 5rem;
+    height: 9rem;
+  }
+  .block-logo.active:after {
+    right: 20rem;
+  }
+  .img-bl {
+    width: 50%;
+    margin-top: 10rem;
+  }
+  .img-bl img {
+    max-width: 90%;
+    vertical-align: middle;
+  }
+  .text-appr {
+    width: 100%;
+  }
+  .title-appr {
+    font-size: 9rem;
+  }
+  .about-appr, .title-appr{
+    text-align: center;
+    margin-top: 5rem;
+  }
+  .about-appr {
+    font-size: 6rem;
+  }
+  .appr-block{
+    margin-bottom: 5rem;
+  }
+  .approach p {
+    font-size: 14rem;
+  }
+  .ios-s .block-third p {
+    font-size: 6rem;
+  }
+  .left-img{
+    width: 60%;
+    margin: 0 auto;
+    float: none;
+  }
+  .wearables-text p, .content-hid p{
+    text-align: center;
+  }
+  .contact-button-more {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+  .contact-button-more a {
+    font-size: 5.4rem;
+    padding: 3.5rem 5rem 3.5rem 5rem;
+  }
+  .wearables-text{
+    width: 90%;
+  }
+  .socials-mob {
+    margin: 8rem 0;
+    margin-left: -48rem;
+  }
+  .socials-mob a {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+/*Galaxy S5 in portrait*/
+@media only screen 
+and (min-device-width : 360px) 
+and (max-device-width : 640px) 
+and (orientation : portrait){
+  #email_error {
+      top: 294rem;
+  }
+  #message_error {
+    top: 218.5rem;
+  }
+}
+/*Galaxy S5 in landscape*/
+@media only screen 
+and (min-device-width : 360px) 
+and (max-device-width : 640px) 
+and (orientation : landscape){
+  .wearables-s .moremore {
+    left: 50%;
+  }
+  #mail_success {
+    height: 67rem;
+  }
+  #message_error {
+    top: 32rem;
+  }
+  #email_error {
+    top: 50rem;
+  }
+  .careers2 .logo-mob{
+    top:0;
+  }
+  .article-car {
+    text-align: left;
+    margin-top: 6rem;
+    margin-left: 20rem;
+  }
+  .logo-div {
+    height: 30rem;
+  }
+  .block-logo {
+    height: 19rem;
+  }
+  .block-logo:before, .block-logo:after {
+    bottom: 5.5rem;
+    width: 2rem;
+    height: 3rem;
+  }
+  .block-logo img {
+    width: 14rem;
+    height: 14rem;
+    margin-top: 1rem;
+  }
+  .logo-div .contact-button a {
+    font-size: 2.8rem;
+    padding: 2.1rem 4rem 2rem 4rem;
+  }
+  .footer_cont{
+    font-size: 2rem;
+  }
+  .card-div-all{
+    height: 65rem;
+  }
+  .callback-div{
+    top:0;
+    height: 75rem;
+  }
+}
+@media (max-width: 321px){
+  .nav_item {
+    height: 23rem;
+    line-height: 23rem;
+  }
+  .text-menu:after{
+    margin-top: 8rem;
+  }
+  .logo-div {
+    height: 75rem;
+  }
+  .cancel-logo {
+    width: 12rem;
+    height: 12rem;
+  }
+  .block-logo {
+    height: 57rem;
+  }
+  .block-logo:before, .block-logo:after {
+    bottom: 12rem;
+  }
+  .block-logo img {
+    width: 40rem;
+    height: 40rem;
+  }
+  .left-img{
+    float: none;
+    margin:0 auto;
+    width: 60%;
+  }
+  .wearables-text{
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+  .wearables-text p{
+    text-align: center;
+  }
+  .content-hid p{
+    text-align: center;
+  }
+  .uxui-s .moremore, .moremore{
+    left: 41%;
+  }
+}
